@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		7EE3B16C258A53700056F38B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE3B16B258A53700056F38B /* AppDelegate.swift */; };
 		7EE3B16E258A53700056F38B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE3B16D258A53700056F38B /* SceneDelegate.swift */; };
-		7EE3B170258A53700056F38B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE3B16F258A53700056F38B /* ViewController.swift */; };
 		7EE3B173258A53700056F38B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EE3B171258A53700056F38B /* Main.storyboard */; };
 		7EE3B175258A53770056F38B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EE3B174258A53770056F38B /* Assets.xcassets */; };
 		7EE3B178258A53770056F38B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EE3B176258A53770056F38B /* LaunchScreen.storyboard */; };
+		7EE3B187258A55820056F38B /* CharacterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE3B186258A55820056F38B /* CharacterTableViewController.swift */; };
+		7EE3B18A258A56260056F38B /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE3B189258A56260056F38B /* InfoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7EE3B168258A53700056F38B /* Final Fantasy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Final Fantasy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EE3B16B258A53700056F38B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EE3B16D258A53700056F38B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7EE3B16F258A53700056F38B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7EE3B172258A53700056F38B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7EE3B174258A53770056F38B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7EE3B177258A53770056F38B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EE3B179258A53770056F38B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EE3B186258A55820056F38B /* CharacterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewController.swift; sourceTree = "<group>"; };
+		7EE3B189258A56260056F38B /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		7EE3B16A258A53700056F38B /* Final Fantasy */ = {
 			isa = PBXGroup;
 			children = (
-				7EE3B16B258A53700056F38B /* AppDelegate.swift */,
-				7EE3B16D258A53700056F38B /* SceneDelegate.swift */,
-				7EE3B16F258A53700056F38B /* ViewController.swift */,
-				7EE3B171258A53700056F38B /* Main.storyboard */,
-				7EE3B174258A53770056F38B /* Assets.xcassets */,
-				7EE3B176258A53770056F38B /* LaunchScreen.storyboard */,
+				7EE3B180258A53860056F38B /* Model */,
+				7EE3B183258A53910056F38B /* View */,
+				7EE3B182258A538B0056F38B /* ViewModel */,
+				7EE3B184258A53AD0056F38B /* Supports */,
+				7EE3B186258A55820056F38B /* CharacterTableViewController.swift */,
+				7EE3B189258A56260056F38B /* InfoTableViewCell.swift */,
 				7EE3B179258A53770056F38B /* Info.plist */,
 			);
 			path = "Final Fantasy";
+			sourceTree = "<group>";
+		};
+		7EE3B180258A53860056F38B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7EE3B182258A538B0056F38B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7EE3B183258A53910056F38B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7EE3B171258A53700056F38B /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7EE3B184258A53AD0056F38B /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				7EE3B16B258A53700056F38B /* AppDelegate.swift */,
+				7EE3B16D258A53700056F38B /* SceneDelegate.swift */,
+				7EE3B174258A53770056F38B /* Assets.xcassets */,
+				7EE3B176258A53770056F38B /* LaunchScreen.storyboard */,
+			);
+			path = Supports;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +172,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EE3B170258A53700056F38B /* ViewController.swift in Sources */,
 				7EE3B16C258A53700056F38B /* AppDelegate.swift in Sources */,
+				7EE3B18A258A56260056F38B /* InfoTableViewCell.swift in Sources */,
+				7EE3B187258A55820056F38B /* CharacterTableViewController.swift in Sources */,
 				7EE3B16E258A53700056F38B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +325,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QXX4852TTD;
 				INFOPLIST_FILE = "Final Fantasy/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +333,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Brunoprojects.Final-Fantasy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,6 +345,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QXX4852TTD;
 				INFOPLIST_FILE = "Final Fantasy/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +353,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Brunoprojects.Final-Fantasy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
