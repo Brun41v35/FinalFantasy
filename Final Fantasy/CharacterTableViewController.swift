@@ -10,7 +10,7 @@ import UIKit
 class CharacterTableViewController: UITableViewController {
     
     //MARK: - Variables
-    var characters: [String] = ["Noctis", "Prompto", "Regis Luci", "Ignis", "Gladious"]
+    var characters: [Character] = CharacterDAO().informationAboutCharacter()
     
     //MARK: - Life Cycle
     override func viewDidLoad() {

@@ -13,7 +13,7 @@ class InfoTableViewCell: UITableViewCell {
     @IBOutlet weak var labelName: UILabel!
     
     //MARK: - Functions
-    func prepareCell( _ values: String) {
-        labelName.text = values
+    func prepareCell( _ values: Character) {
+        labelName.text = values.name
     }
 }

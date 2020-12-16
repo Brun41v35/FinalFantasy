@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E46FCC4258A790F00AF8981 /* CharacterDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E46FCC3258A790F00AF8981 /* CharacterDAO.swift */; };
 		7EE3B16C258A53700056F38B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE3B16B258A53700056F38B /* AppDelegate.swift */; };
 		7EE3B16E258A53700056F38B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE3B16D258A53700056F38B /* SceneDelegate.swift */; };
 		7EE3B173258A53700056F38B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EE3B171258A53700056F38B /* Main.storyboard */; };
@@ -14,9 +15,11 @@
 		7EE3B178258A53770056F38B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EE3B176258A53770056F38B /* LaunchScreen.storyboard */; };
 		7EE3B187258A55820056F38B /* CharacterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE3B186258A55820056F38B /* CharacterTableViewController.swift */; };
 		7EE3B18A258A56260056F38B /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE3B189258A56260056F38B /* InfoTableViewCell.swift */; };
+		7EE3B18F258A76370056F38B /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE3B18E258A76370056F38B /* Character.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E46FCC3258A790F00AF8981 /* CharacterDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDAO.swift; sourceTree = "<group>"; };
 		7EE3B168258A53700056F38B /* Final Fantasy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Final Fantasy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EE3B16B258A53700056F38B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EE3B16D258A53700056F38B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		7EE3B179258A53770056F38B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EE3B186258A55820056F38B /* CharacterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewController.swift; sourceTree = "<group>"; };
 		7EE3B189258A56260056F38B /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
+		7EE3B18E258A76370056F38B /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 				7EE3B184258A53AD0056F38B /* Supports */,
 				7EE3B186258A55820056F38B /* CharacterTableViewController.swift */,
 				7EE3B189258A56260056F38B /* InfoTableViewCell.swift */,
+				7E46FCC3258A790F00AF8981 /* CharacterDAO.swift */,
 				7EE3B179258A53770056F38B /* Info.plist */,
 			);
 			path = "Final Fantasy";
@@ -72,6 +77,7 @@
 		7EE3B180258A53860056F38B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7EE3B18E258A76370056F38B /* Character.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -172,6 +178,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E46FCC4258A790F00AF8981 /* CharacterDAO.swift in Sources */,
+				7EE3B18F258A76370056F38B /* Character.swift in Sources */,
 				7EE3B16C258A53700056F38B /* AppDelegate.swift in Sources */,
 				7EE3B18A258A56260056F38B /* InfoTableViewCell.swift in Sources */,
 				7EE3B187258A55820056F38B /* CharacterTableViewController.swift in Sources */,
