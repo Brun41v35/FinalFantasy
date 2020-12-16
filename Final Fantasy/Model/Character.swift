@@ -12,10 +12,12 @@ class Character {
     //MARK: - Propeties
     let name: String
     let descripition: String
+    let image: String
     
     //MARK: - Constructor
-    init(name: String, descripition: String) {
+    init(name: String, descripition: String, image: String) {
         self.name = name
         self.descripition = descripition
+        self.image = image
     }
 }

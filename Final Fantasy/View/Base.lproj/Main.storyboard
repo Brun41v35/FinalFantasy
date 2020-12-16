@@ -23,21 +23,35 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="108"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uDV-PL-lz2">
+                                            <rect key="frame" x="-12" y="-10" width="0.0" height="128"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DW3-4a-HsR">
+                                            <rect key="frame" x="16" y="7" width="74" height="95"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="95" id="ZM5-OD-dhu"/>
+                                                <constraint firstAttribute="width" constant="74" id="gff-Ns-i6g"/>
+                                            </constraints>
+                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOx-UM-Iin">
-                                            <rect key="frame" x="16" y="44" width="158" height="21"/>
+                                            <rect key="frame" x="116" y="44" width="179" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="aOx-UM-Iin" firstAttribute="top" secondItem="pFb-yh-VmA" secondAttribute="top" constant="44" id="6h9-fZ-Np0"/>
-                                        <constraint firstAttribute="trailing" secondItem="aOx-UM-Iin" secondAttribute="trailing" constant="146" id="bwF-gC-ciO"/>
-                                        <constraint firstAttribute="bottom" secondItem="aOx-UM-Iin" secondAttribute="bottom" constant="43" id="jfu-r0-dGd"/>
-                                        <constraint firstItem="aOx-UM-Iin" firstAttribute="leading" secondItem="pFb-yh-VmA" secondAttribute="leading" constant="16" id="rk9-83-P78"/>
+                                        <constraint firstAttribute="bottom" secondItem="DW3-4a-HsR" secondAttribute="bottom" constant="6" id="5Wb-sZ-XLs"/>
+                                        <constraint firstItem="DW3-4a-HsR" firstAttribute="leading" secondItem="pFb-yh-VmA" secondAttribute="leading" constant="16" id="IXt-v4-qDk"/>
+                                        <constraint firstAttribute="trailing" secondItem="aOx-UM-Iin" secondAttribute="trailing" constant="25" id="JlF-3j-dHm"/>
+                                        <constraint firstItem="DW3-4a-HsR" firstAttribute="top" secondItem="pFb-yh-VmA" secondAttribute="top" constant="7" id="Ljl-Nz-6rq"/>
+                                        <constraint firstItem="aOx-UM-Iin" firstAttribute="top" secondItem="pFb-yh-VmA" secondAttribute="top" constant="44" id="dPU-Ac-SJb"/>
+                                        <constraint firstItem="aOx-UM-Iin" firstAttribute="leading" secondItem="DW3-4a-HsR" secondAttribute="trailing" constant="26" id="gdh-Xk-kxZ"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="imageCharacter" destination="DW3-4a-HsR" id="JMn-zK-LCu"/>
                                     <outlet property="labelName" destination="aOx-UM-Iin" id="VdY-p3-dlO"/>
                                 </connections>
                             </tableViewCell>
@@ -51,7 +65,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hN5-WI-YKp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="328" y="45"/>
+            <point key="canvasLocation" x="286.875" y="45"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="AR1-oa-y3E">

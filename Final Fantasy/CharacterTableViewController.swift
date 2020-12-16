@@ -26,6 +26,9 @@ class CharacterTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! InfoTableViewCell
         let character = characters[indexPath.row]
         cell.prepareCell(character)
+        cell.imageCharacter.layer.cornerRadius = 8
+        cell.imageCharacter.layer.borderWidth = 2
+        cell.imageCharacter.layer.borderColor = UIColor.gray.cgColor
         return cell
     }
 }
