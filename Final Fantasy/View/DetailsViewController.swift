@@ -9,7 +9,8 @@ import UIKit
 
 class DetailsViewController: UIViewController, DetalhesPersonagensDelegate {
     
-    var teste: Character?
+    //MARK: - Variables
+    var personagemDelegate: Character?
     
     //MARK: - IBOutlets
     @IBOutlet weak var labelName: UILabel!
@@ -18,7 +19,12 @@ class DetailsViewController: UIViewController, DetalhesPersonagensDelegate {
     //MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        adicionaPersonagem(teste!)
+        
+        guard let valor = personagemDelegate else {
+            print("Sem valor")
+            return
+        }
+        adicionaPersonagem(valor)
     }
     
     //MARK: - Functions

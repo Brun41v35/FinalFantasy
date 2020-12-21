@@ -8,7 +8,7 @@
 import UIKit
 
 protocol DetalhesPersonagensDelegate {
-    func adicionaPersonagem(_ character: Character)
+    var personagemDelegate: Character? { get set }
 }
 
 class CharacterTableViewController: UITableViewController {
@@ -33,8 +33,8 @@ class CharacterTableViewController: UITableViewController {
     
     //MARK: - Functions
     func chamaTelaDetalhes() {
-        let detais = DetailsViewController()
-        navigationController?.pushViewController(detais, animated: true)
+        let detalhes = DetailsViewController()
+        navigationController?.pushViewController(detalhes, animated: true)
     }
     
     // MARK: - Table view data source
@@ -56,7 +56,7 @@ class CharacterTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let indexSelected = tableView.indexPathForSelectedRow else { return }
         let teste = characters[indexSelected.row]
-        delegate?.adicionaPersonagem(teste)
+        delegate?.personagemDelegate = teste
         chamaTelaDetalhes()
     }
 }
