@@ -7,10 +7,10 @@
 
 import UIKit
 
-class DetailsViewController: UIViewController, DetalhesPersonagensDelegate {
+class DetailsViewController: UIViewController {
     
     //MARK: - Variables
-    var personagemDelegate: Character?
+    var personagem: Character?
     
     //MARK: - IBOutlets
     @IBOutlet weak var labelName: UILabel!
@@ -20,7 +20,7 @@ class DetailsViewController: UIViewController, DetalhesPersonagensDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        guard let valor = personagemDelegate else {
+        guard let valor = personagem else {
             print("Sem valor")
             return
         }

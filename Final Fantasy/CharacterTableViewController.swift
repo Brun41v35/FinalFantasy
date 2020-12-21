@@ -7,24 +7,10 @@
 
 import UIKit
 
-protocol DetalhesPersonagensDelegate {
-    var personagemDelegate: Character? { get set }
-}
-
 class CharacterTableViewController: UITableViewController {
     
     //MARK: - Variables
     var characters: [Character] = CharacterDAO().informationAboutCharacter()
-    var delegate: DetalhesPersonagensDelegate?
-    
-    init (delegate: DetalhesPersonagensDelegate) {
-        super.init(nibName: "CharacterTableViewController", bundle: nil)
-        self.delegate = delegate
-    }
-    
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-    }
     
     //MARK: - Life Cycle
     override func viewDidLoad() {
@@ -32,8 +18,9 @@ class CharacterTableViewController: UITableViewController {
     }
     
     //MARK: - Functions
-    func chamaTelaDetalhes() {
+    func chamaTelaDetalhes(personagem: Character) {
         let detalhes = DetailsViewController()
+        detalhes.personagem = personagem
         navigationController?.pushViewController(detalhes, animated: true)
     }
     
@@ -56,7 +43,6 @@ class CharacterTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let indexSelected = tableView.indexPathForSelectedRow else { return }
         let teste = characters[indexSelected.row]
-        delegate?.personagemDelegate = teste
-        chamaTelaDetalhes()
+        chamaTelaDetalhes(personagem: teste)
     }
 }
