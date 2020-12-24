@@ -30,6 +30,8 @@ class DetailsViewController: UIViewController {
     //MARK: - Functions
     func adicionaPersonagem(_ character: Character) {
         guard let labelNameCharacter = labelName else { return }
+        guard let imageCharacter = image else { return }
         labelNameCharacter.text =  character.name
+        imageCharacter.image = UIImage(named: character.image)
     }
 }

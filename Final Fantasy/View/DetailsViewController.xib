@@ -20,13 +20,13 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q56-yf-sur">
-                    <rect key="frame" x="138" y="275" width="45" height="20.5"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q56-yf-sur">
+                    <rect key="frame" x="41" y="275" width="237" height="24"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ko1-Sd-Ddx">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ko1-Sd-Ddx">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="241"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="320" id="HDI-GX-kSr"/>
@@ -37,14 +37,14 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="q56-yf-sur" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="138" id="H8p-8C-fWM"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="q56-yf-sur" secondAttribute="trailing" constant="137" id="VNh-zt-Vd9"/>
+                <constraint firstItem="q56-yf-sur" firstAttribute="top" secondItem="ko1-Sd-Ddx" secondAttribute="bottom" constant="34" id="4SQ-pF-EAn"/>
                 <constraint firstItem="ko1-Sd-Ddx" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Yvu-vD-588"/>
-                <constraint firstItem="q56-yf-sur" firstAttribute="top" secondItem="ko1-Sd-Ddx" secondAttribute="bottom" constant="34" id="cE2-0E-f2P"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="q56-yf-sur" secondAttribute="trailing" constant="42" id="eyR-sS-pzO"/>
                 <constraint firstItem="ko1-Sd-Ddx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="jwD-tg-NHS"/>
+                <constraint firstItem="q56-yf-sur" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="41" id="pRI-El-xKJ"/>
                 <constraint firstItem="ko1-Sd-Ddx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="vOj-EZ-7NI"/>
             </constraints>
-            <point key="canvasLocation" x="-240" y="55"/>
+            <point key="canvasLocation" x="-778" y="236"/>
         </view>
     </objects>
     <resources>
